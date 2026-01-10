@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcify – Smart Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+
+    <!-- THEME TOGGLE -->
+    <button class="theme-btn" onclick="toggleTheme()">🌙 / ☀️</button>
+
+    <form name="form1" class="calci">
+
+        <!-- CALCULATOR HEADER -->
+        <div class="calc-header">
+            <div class="calc-title">
+                <span class="app-name">Calcify</span>
+                <span class="author-name">by Rohan Shinde</span>
+            </div>
+            <div class="theme-name" id="themeName">Dark Theme</div>
+        </div>
+
+        <!-- DISPLAY -->
+        <input type="text" name="answer" id="display" readonly><br>
+
+        <!-- ROW 1 -->
+        <input type="button" value="C" class="button" onclick="form1.answer.value=''">
+        <input type="button" value="⌫" class="button"
+            onclick="form1.answer.value=form1.answer.value.slice(0,-1)">
+        <input type="button" value="00" class="button" onclick="form1.answer.value+='00'">
+        <input type="button" value="/" class="operator" onclick="form1.answer.value+='/'"><br>
+
+        <!-- ROW 2 -->
+        <input type="button" value="7" class="button" onclick="form1.answer.value+='7'">
+        <input type="button" value="8" class="button" onclick="form1.answer.value+='8'">
+        <input type="button" value="9" class="button" onclick="form1.answer.value+='9'">
+        <input type="button" value="*" class="operator" onclick="form1.answer.value+='*'"><br>
+
+        <!-- ROW 3 -->
+        <input type="button" value="4" class="button" onclick="form1.answer.value+='4'">
+        <input type="button" value="5" class="button" onclick="form1.answer.value+='5'">
+        <input type="button" value="6" class="button" onclick="form1.answer.value+='6'">
+        <input type="button" value="-" class="operator" onclick="form1.answer.value+='-'"><br>
+
+        <!-- ROW 4 -->
+        <input type="button" value="1" class="button" onclick="form1.answer.value+='1'">
+        <input type="button" value="2" class="button" onclick="form1.answer.value+='2'">
+        <input type="button" value="3" class="button" onclick="form1.answer.value+='3'">
+        <input type="button" value="+" class="operator" onclick="form1.answer.value+='+'"><br>
+
+        <!-- ROW 5 -->
+        <input type="button" value="0" class="button" id="zero" onclick="form1.answer.value+='0'">
+        <input type="button" value="." class="button" onclick="form1.answer.value+='.'">
+        <input type="button" value="=" class="operator"
+            onclick="form1.answer.value=eval(form1.answer.value)">
+
+    </form>
+
+    <script>
+        function toggleTheme(){
+            document.body.classList.toggle("light");
+            document.getElementById("themeName").innerText =
+                document.body.classList.contains("light")
+                ? "Light Theme"
+                : "Dark Theme";
+        }
+    </script>
+
+</body>
+</html>
