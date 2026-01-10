@@ -1,13 +1,9 @@
 # 🧮 Calcify – Smart Calculator
 
-🌐 **Live Website:**  
-👉 https://rohanshinde8080.github.io/smart-calc/
+A modern and interactive calculator built using HTML, CSS, and JavaScript with smooth animations, Dark/Light theme, and a clean UI.
 
-Calcify is a **modern, interactive, and user-friendly calculator** built using  
-**HTML, CSS, and JavaScript**.  
-It is designed to look and feel like a **real web app**, not just a basic calculator.
-
-With smooth animations, Dark & Light themes, and a clean UI, Calcify offers a great user experience for everyday calculations.
+🌐 **Live Website**  
+https://rohanshinde8080.github.io/smart-calc/
 
 ---
 
