@@ -1,4 +1,5 @@
 # 🧮 Calcify – Smart Calculator
+
 🌐 **Live Website:**  
 👉 https://rohanshinde8080.github.io/smart-calc/
 
