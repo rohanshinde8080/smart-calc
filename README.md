@@ -38,10 +38,3 @@ You can use it for:
 
 ---
 
-## 👨‍💻 Author
-
-**Rohan Shinde**  
-Web Developer | UI Designer  
-
----
-
